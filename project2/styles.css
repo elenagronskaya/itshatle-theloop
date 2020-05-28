@@ -11,8 +11,8 @@ header {
 }
 
 .header-wrapper {
-    max-width: 1290px;
-    background: #fff url('./Images/Rectangle.jpg')  ;
+    max-width: 1920px;
+    background: #fff url('./images/rectangle.jpg');
     min-height: 900px;
 }
 
