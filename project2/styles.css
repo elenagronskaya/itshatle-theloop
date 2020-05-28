@@ -1,4 +1,65 @@
 
 body {
+    margin: 0;
+    padding: 0;
+    background-color:#F6F6F8 ;
+    font-family: 'Montserrat', sans-serif;
     
 }
+header {
+    margin: o auto;
+}
+
+.header-wrapper {
+    max-width: 1290px;
+    background: #fff url('./Images/Rectangle.jpg')  ;
+    min-height: 900px;
+}
+
+.header-navigation {
+    border-bottom: 1px solid #A1A1A1;
+}
+.navigation-wrapper {
+    display: flex;
+    align-items: stretch;
+    height: 100px;
+    justify-content: flex-end;
+}
+
+.navigation-item {
+    margin: 0 0 0 40px;
+    display: flex;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+
+.navigation-item a:hover {
+    border-bottom: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0,1);
+}
+
+.navigation-item a {
+    line-height: 100px;
+    font-size: 16px;
+    font-weight: 500px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navigation-item:first-child {
+    margin: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    /* background-color: rgb(255,255,255,0.65); */
+}
+
+
+
+
+
+
+
+
