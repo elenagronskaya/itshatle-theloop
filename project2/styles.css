@@ -185,12 +185,68 @@ header {
     text-align: center;
     color: #FFFFFF;
     margin: 55px auto 105px auto;
+    } 
 
+.section_background_silver {
+    background: #F6F6F8;
+}
+.hight_standard {
+    display: flex;
+    justify-content: center;
+}
 
-}    
+ 
+.development_standard {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    border-bottom: 1px solid #E0E0E0;
+}
+.standard {
+    margin: 52px 121px 0 0;
+}
+
+.standard h3 {
+    width: 424px;
+    height: 88px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    color: #323232;
+    margin: 0;
+
+}
+
+.standard p {
+    width: 489px;
+    height: 117px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #999999;
+    margin: 40px 0 0 0;
+    display: inline-block;
     
 
-
+}
+.about_company {
+    width: 202px;
+    height: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #4985FF;
+    margin-top: 30px;
+}
+.work {
+    width: 500px;
+    height: 400px;
+    border-radius: 30px;
+    display: block;
+}
 
 
 
