@@ -195,13 +195,21 @@ header {
 }
 
  
-.development_standard {
+.development_standard_wrapper {
     max-width: 1920px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     padding-top: 100px;
+
+}
+
+.development_standard {
+   
+    display: flex;
+    justify-content: center;
     border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 90px;
 }
 .standard {
     margin: 52px 121px 0 0;
