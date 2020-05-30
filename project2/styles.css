@@ -137,7 +137,7 @@ header {
     }
 .create_sites {
     width: 222px;
-    margin: 44px 0 0 17px;
+    margin: 44px 30px 0 18px;
 
 
     }
@@ -254,7 +254,365 @@ header {
     border-radius: 30px;
     display: block;
 }
+.projects_container {
+    margin: 70px auto 70px auto;
+    display: flex;
+    justify-content: space-around;
+    width: 1110px;
+}
+.our_projects {
+    width: 104px;
+    height: 67px;
+    
+}
+.fal {
+    color: #4985FF;
+    width: 30px;
+    height: 26px;
+    
+}
+.quantity {
+    width: 54px;
+    height: 35px;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 53px;
+    color: #000000;
+}
+.our_work {
+    width: 100px;
+    height: 15px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #999999;
+}
+.specialisation {
+    max-width: 1920px;
+    min-height: 490px;
+    background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.specialisation_work {
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.specialisation_work h2 {
+    width: 540px;
+    height: 88px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    color: #FFFFFF;
+    margin-top: 100px;
+}
+.specialisation_work button {
+    width: 200px;
+    height: 45px;
+    background: #4985FF;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    display: block;
+    margin: 120px;
+    border: 0;
+    color: #FFFFFF;
+}
+.specialisation-wrapper {
+    margin: 0 auto 85px auto;
+    display: flex;
+    justify-content: space-around;
+    width: 1110px;
+    border-bottom: 1px solid #A1A1A1;
+    position: relative;
+    bottom: 232px;
 
+}
+
+.specialisation_study {
+    display: flex;
+    flex-direction: column;
+
+
+}
+.specialisation_study img {
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+
+
+}
+.specialisation_study h3 {
+    width: 281px;
+    height: 17px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 30px 0 0 0;
+
+}
+.specialisation_study h3 span {
+    width: 281px;
+    height: 17px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4985FF;
+    margin: 30px 0 0 0;
+}
+.specialisation_study p {
+    width: 350px;
+    height: 117px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #999999;
+    margin: 30px 0 0 0;
+
+
+}
+.specialisation_study a {
+    width: 97px;
+    height: 20px;
+    text-decoration-line: underline;
+    color: #4985FF;
+    margin: 30px 0 85px 0;
+
+}
+.all_projects {
+    max-width: 1920px;
+    min-height: 776px;
+    margin: 0 auto;
+    width: 1110px;
+
+}
+.section_title {
+    width: 1110px;
+
+
+}
+.section_title h2 {
+    width: 350px;
+    height: 35px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    color: #000000;
+    margin: 100px auto 0 auto;
+
+}
+.section_title P {
+    width: 730px;
+    height: 41px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #999999;
+    margin: 50px auto 0 auto;
+}
+.section_img {
+    display: flex;
+    justify-content: space-around;
+    margin: 70px auto 0 auto;
+
+
+}
+.section_img img {
+    width: 255px;
+    height: 255px;
+    border-radius: 10px;
+
+}
+.all_projects button {
+    width: 200px;
+    height: 45px;
+    background: #4985FF;
+    border-radius: 30px;
+    border: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin: 63px auto 130px auto;
+    color: #FFFFFF;
+    display: block;
+
+
+}
+.video_description {
+    max-width: 1920px;
+    min-height: 900px;
+    margin: 0 auto;
+}
+.about_work {
+    max-width: 1920px;
+    min-height: 570px;
+    background: #fff url('./images/Rectangle5.jpg');
+}
+.about_work h2 {
+    width: 444px;
+    height: 35px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 70px auto 0 auto;
+    padding-top: 70px;
+
+}
+.about_work p {
+    width: 730px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 30px auto 0 auto;
+    
+
+}
+.video_wrapper {
+    margin: 0 auto;
+    border-bottom: 1px solid #E0E0E0;
+    width: 1110px
+    
+}
+.video_wrapper iframe {
+    width: 970px;
+    height: 430px;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 10px;
+    margin: 0 auto 85px auto;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid red;
+    position: relative;
+    bottom: 350px;
+
+}
+
+.distribution h3 {
+    width: 350px;
+    height: 17px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin: 85px auto 0 auto;
+    color: #000000;
+
+}
+.distribution p {
+    width: 730px;
+    height: 15px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #999999;
+    margin: 20px auto 0 auto;
+
+}
+.submit {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1110px;
+}
+.submit input {
+    width: 489px;
+    height: 45px;
+    background: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin: 30px auto 0 auto;
+    position: relative;
+    top: 0;
+    left: 200px;
+    
+
+}
+.submit button {
+    width: 190px;
+    height: 45px;
+    background: #4985FF;
+    border-radius: 0px 30px 30px 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 30px auto 0 auto;
+    display: block;
+    border: 0;
+    position: relative;
+    bottom: 0px;
+    right: 208px;
+}
+    
+
+
+
+.distribution pre {
+    width: 386px;
+    height: 15px;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+    color: #999999;
+    margin: 35px auto 0 auto;
+
+}
+footer {
+    width: 1920px;
+    height: 413px;
+    background: #F6F6F8;
+    margin: 0 auto;
+}
+.footer_container {
+    width: 1110px;
+    border-bottom: 1px solid #E0E0E0;
+    display: flex;
+    justify-content: space-between;
+    margin: 70px auto 0 auto;
+
+}
+.contact_information {
+    padding-bottom: 70px;
+}
+
+.contact_information h3 {
+    width: 242px;
+    height: 17px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin: 70px 0 0 0;
+
+}
+.contact_information p {
+    width: 225px;
+    height: 14px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #999999;
+    margin: 30px 0 0 0;
+
+}
 
 
 
