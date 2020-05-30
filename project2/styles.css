@@ -265,10 +265,10 @@ header {
     height: 67px;
     
 }
-.fal {
+.projects_container .fa-window {
     color: #4985FF;
-    width: 30px;
-    height: 26px;
+    font-size: 26px;
+    margin-right: 10px;
     
 }
 .quantity {
@@ -388,7 +388,6 @@ header {
 }
 .all_projects {
     max-width: 1920px;
-    min-height: 776px;
     margin: 0 auto;
     width: 1110px;
 
@@ -603,6 +602,15 @@ footer {
     margin: 70px 0 0 0;
 
 }
+.contact_information_first h3 {
+    width: 255px;
+    height: 17px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin: 70px 0 0 0;
+}
 .contact_information p {
     width: 225px;
     height: 14px;
@@ -612,6 +620,33 @@ footer {
     color: #999999;
     margin: 30px 0 0 0;
 
+}
+.contact_information_first p {
+    width: 255px;
+    height: 14px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #999999;
+    margin: 30px 0 0 0;
+}
+.footer_container i {
+    color: #999999;
+
+}
+.footer_container .far,.fal {
+    margin-right: 18px;
+
+}
+.copyright {
+    width: 386px;
+    height: 15px;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+    color: #999999;
+    margin: 30px auto;
 }
 
 
