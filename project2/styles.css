@@ -154,6 +154,10 @@ header {
     border: 1px solid #E0E0E0;
     box-sizing: border-box;
     }
+.outerellipse:hover
+{
+    border: 1px solid blue;
+}
 .inerellipse{
     width: 90px;
     height: 90px;
@@ -455,7 +459,7 @@ header {
 .about_work {
     max-width: 1920px;
     min-height: 570px;
-    background: #fff url('./images/Rectangle5.jpg');
+    background: #fff url('./images/rectangle5.jpg');
 }
 .about_work h2 {
     width: 444px;
