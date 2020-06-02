@@ -81,7 +81,7 @@ header {
     width: 829px;
     
  }
- .projects {
+.projects {
     display: block;
     background: #4985FF;
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
@@ -97,11 +97,6 @@ header {
     border: 0;
     }
     
-.mobile_add {
-    margin: 0 auto;
-    max-width: 1920px;
-    }
-
 .mobile_add h2 {
     font-weight: bold;
     font-size: 36px;
@@ -109,8 +104,7 @@ header {
     text-align: center;
     color: #323232;
     margin: 110px auto 0 auto;
-    width: 739px;
-    height: 88px;   
+    width: 739px;   
     }
 
 .mobile_add p {
@@ -122,7 +116,6 @@ header {
     color: #999999;
     margin: 50px auto 0 auto;
     width: 730px;
-    height: 41px;
     }
 .services {
     margin: 70px auto 0 auto;
@@ -196,11 +189,12 @@ header {
 .hight_standard {
     display: flex;
     justify-content: center;
+
 }
 
  
 .development_standard_wrapper {
-    max-width: 1920px;
+    max-width: 1110px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -263,7 +257,7 @@ header {
     display: flex;
     justify-content: space-around;
     width: 1110px;
-}
+} 
 .our_projects {
     width: 104px;
     height: 67px;
@@ -291,13 +285,14 @@ header {
     line-height: 25px;
     color: #999999;
 }
-.specialisation {
-    max-width: 1920px;
+.specialisation_container {
+   max-width: 1920px;
     min-height: 887px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
     position: relative;
+    
     
 }
 .specialisation_background {
@@ -400,14 +395,14 @@ header {
     margin: 30px 0 85px 0;
 
 }
+
 .all_projects {
-    max-width: 1920px;
     margin: 100px auto;
-    width: 1110px;
+    max-width: 1110px;
 
 }
 .section_title {
-    width: 1110px;
+    max-width: 1110px;
 
 
 }
@@ -440,9 +435,9 @@ header {
 
 }
 .section_img img {
-    width: 255px;
-    height: 255px;
+    height: unset;
     border-radius: 10px;
+    width: 365px;
 
 }
 .all_projects button {
@@ -547,18 +542,19 @@ header {
     max-width: 1110px;
 }
 .submit input {
-    width: 489px;
+    width: 320px;
     height: 45px;
     background: #FFFFFF;
     border: 1px solid #F2F2F2;
     box-sizing: border-box;
-    border-radius: 30px;
-    margin: 30px auto 0 auto;
-    position: relative;
-    top: 0;
-    left: 200px;
+    border-radius: 30px 0 0 30px;
+    margin: 30px 0 0 auto;
+    
     
 
+}
+.submit input::placeholder {
+    padding-left: 33px;
 }
 .submit button {
     width: 190px;
@@ -570,16 +566,13 @@ header {
     line-height: 20px;
     text-align: center;
     color: #FFFFFF;
-    margin: 30px auto 0 auto;
+    margin: 30px auto 0 0;
     display: block;
     border: 0;
-    position: relative;
-    bottom: 0px;
-    right: 208px;
+    
+    
 }
     
-
-
 
 .distribution pre {
     width: 386px;
@@ -593,13 +586,13 @@ header {
 
 }
 footer {
-    width: 1920px;
+    max-width: 1920px;
     height: 413px;
     background: #F6F6F8;
     margin: 0 auto;
 }
 .footer_container {
-    width: 1110px;
+    max-width: 1110px;
     border-bottom: 1px solid #E0E0E0;
     display: flex;
     justify-content: space-between;
@@ -657,6 +650,7 @@ footer {
 
 }
 .copyright {
+    max-width: 1110px;
     width: 386px;
     height: 15px;
     font-weight: normal;
@@ -667,5 +661,257 @@ footer {
     margin: 30px auto;
 }
 
+
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+   
+} 
+
+/* ============================= ПЛАНШЕТ ===================== */
+ 
+@media (max-width: 1109px) {
+    .container {
+        width: 80%;
+        margin: 0 10%;
+    }
+    .header-wrapper {
+        min-height: 630px;
+    }
+    .navigation-wrapper {
+        justify-content: center;
+    }
+    .slogan, .mobile_add h2, .mobile_add p {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .about {
+        margin-top: 100px;
+    }
+    
+    
+    .service {
+        flex-direction: column;
+        
+    }
+    .outerellipse {
+        margin: 0 auto;
+    }
+    .create_sites {
+        width: 190px;
+        margin: 10px 10px 0 10px;
+    }
+    .all_services {
+        margin: 55px auto 30px auto;
+    }
+    .development_standard {
+        flex-direction: column;
+        width: 100%;
+    }
+    .development_standard_wrapper {
+        padding-top: 0;
+    }
+    .standard {
+        text-align: center;
+        padding: 0 10px;
+        margin: 32px 0 0 0;
+    }
+    .standard h3, p {
+        width: unset;
+        height: unset;
+        text-align: center;
+    }
+    .about_company {
+        margin: 30px auto 20px auto;
+    }
+    .work {
+        margin: 0 auto;
+    }
+    .projects_container .fa-window {
+        font-size: 20px;
+        margin: 0 15px 0 14px;
+    }
+    .quantity {
+        font-size: 23px;
+    }
+    .our_work {
+        margin-top: 0px;
+    }
+    .projects_container {
+        width: unset;
+    }
+    .all_projects {
+        margin: 100px auto;
+    }
+    .section_title p {
+        width: unset;
+        height: unset;
+
+    }
+    .section_img {
+        flex-wrap: wrap;
+        margin: 30px auto;
+    }
+    .section_img img {
+        margin: 0 0 20px 0;
+    }
+    .specialisation_container {
+        min-height: 787px;
+    }
+    .specialisation_background {
+        z-index: 9;
+        min-height: 350px;
+    }
+    .specialisation_work {
+        margin: 0 auto;
+        z-index: 99999;
+        position: unset;
+        width: unset;
+        flex-direction: column;
+    }
+    .specialisation_work h2 {
+        width: unset;
+        height: unset;
+        margin: 30px auto;
+        z-index: 999;
+        font-size: 17px;
+    }
+    .specialisation_work button {
+        width: 148px;
+        margin: 0 auto;
+        z-index: 99;
+    }
+    .specialisation-wrapper {
+        width: 100%;
+        top: 80px;
+        z-index: 999;
+        margin: 0 auto;
+        height: unset;
+
+    }
+    .specialisation_study {
+        width: 30%
+    }
+    .specialisation_study img {
+        width: 90%;
+        height: unset;
+
+    }
+    .specialisation_study h3 {
+        width: unset;
+        font-size: 16px;
+        margin: 20px 0 0 0;
+    }
+    .specialisation_study h3 span {
+        font-size: 16px;
+    }
+    .specialisation_study p {
+        width: unset;
+        height: unset;
+
+    }
+    .specialisation_study a {
+        width: unset;
+        height: unset;
+        margin: 30px auto 50px auto;
+    }
+    .distribution p {
+        width: unset;
+    }
+    .about_work {
+        min-height: 370px;
+    }
+    .about_work p {
+        width: unset;
+    }
+    .video_wrapper {
+        width: 80%;
+        top: 269px;
+        left: 110px;
+    }
+    .video_wrapper iframe {
+        width: 80%;
+        height: 230px;
+
+    }
+    .footer_container {
+        flex-wrap: wrap;
+    }
+    .contact_information h3 {
+        text-align: center;
+        margin: 30px 0 0 0;
+
+    }
+    .contact_information_first h3 {
+        margin: 30px 0 0 0;
+    }
+    
+
+
+
+
+
+
+
+    
+
+    
+    
+}
+
+@media (max-width: 768px) 
+{
+    .container {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+
+    }
+    .navigation-wrapper {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+
+    }
+    .navigation-item {
+        margin: 0 0 10px 0;
+    }
+    .navigation-item a {
+        font-size: 12px;
+        line-height: 1;
+        
+    }
+    .navigation-item:first-child {
+        margin: 0 0 10px 0;
+    }
+    .slogan, .mobile_add h2, .mobile_add p {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    
+    }
+    .create_sites {
+        text-align: center;
+        margin: 10px 30px 15px 18px;
+
+    }
+    .service {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services {
+        flex-direction: column;
+
+    }
+    .create_sites {
+        text-align: center;
+    }
+
+
+
+}
 
 
