@@ -666,6 +666,7 @@ footer {
 .container {
     max-width: 1110px;
     margin: 0 auto;
+    overflow: hidden;
    
 } 
 
@@ -848,21 +849,20 @@ footer {
         margin: 30px 0 0 0;
     }
     
-
-
-
-
-
-
-
-    
-
-    
-    
 }
 
-@media (max-width: 768px) 
-{
+
+
+
+
+
+/* ======================= ДЛЯ МОБИЛЫ ========================================= */
+
+
+
+
+
+@media (max-width: 768px) {
     .container {
         box-sizing: border-box;
         width: 100%;
@@ -884,6 +884,14 @@ footer {
         line-height: 1;
         
     }
+    .about {
+        margin-top: 40px;
+    }
+
+    .slogan, .mobile_add h2, .standard h3 {
+        font-size: 30px;
+    }
+
     .navigation-item:first-child {
         margin: 0 0 10px 0;
     }
@@ -891,8 +899,19 @@ footer {
         width: 100%;
         padding: 0 10px;
         box-sizing: border-box;
-    
     }
+    .all_services {
+        margin: 25px auto;
+    }
+
+    .mobile_add h2 {
+        margin: 40px auto 0 auto;
+    }
+    .standard p {
+        width: unset;
+        height: unset;
+    }
+
     .create_sites {
         text-align: center;
         margin: 10px 30px 15px 18px;
@@ -909,6 +928,83 @@ footer {
     .create_sites {
         text-align: center;
     }
+
+    .work {
+        width: 100%;
+        height: unset;
+    }
+    .development_standard {
+        padding-bottom: 45px
+    }
+    .projects_container {
+        margin: 35px auto 35px auto;
+        flex-wrap: wrap;
+    }
+    .our_projects {
+        margin-bottom: 25px;
+        padding: 0 10px;
+    }
+    .specialisation_work h2 {
+        display: flex;
+        text-align: center;
+        line-height: 36px;
+        margin: 20px auto;
+        font-size: 20px;
+    }
+    .specialisation_work button {
+        height: 36px;
+        line-height: 20px;
+        font-size: 18px;
+
+    }
+    .specialisation-wrapper {
+        display: flex;
+        flex-direction: column;
+        top: 39px;  
+
+    }
+    .specialisation_study {
+        width: 100%;
+    }
+    .specialisation_study img {
+        width: 70%;
+        height: unset;
+        margin: 0 auto;
+    }
+    .specialisation_study h3 {
+        width: unset;
+        font-size: 20px;
+        margin: 20px auto 0 auto;
+    }
+    .specialisation_study p {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .specialisation_study h3 span {
+        font-size: 20px;
+    }
+    .section_title h2 {
+        margin: 50px auto 0 auto;
+    }
+    .all_projects button {
+        margin: 30px auto 20px auto;
+    } 
+    .all_projects {
+        margin: 50px auto;
+    }
+    .about_work h2 {
+        font-size: 25px;
+        margin: 0 auto;
+        padding-top: 35px;
+        width: unset;
+        height: unset;
+    }
+    .about_work p {
+        font-size: 10px;
+        margin: 0 auto;
+    }
+
+
 
 
 
