@@ -456,14 +456,15 @@ header {
 
 
 }
-.video_description {
+/* .video_description {
     max-width: 1920px;
     min-height: 900px;
     margin: 0 auto;
     position: relative;
-}
+} */
 .about_work {
-    max-width: 1920px;
+    /* max-width: 1920px; */
+    max-width: 100%;
     min-height: 570px;
     background: #fff url('./images/rectangle5.jpg');
 }
@@ -493,14 +494,15 @@ header {
 .video_wrapper {
     margin: 0 auto;
     border-bottom: 1px solid #E0E0E0;
-    width: 1110px;
-    position: absolute;
-    top: 220px;
-    left: 445px;
+    width: 80%;
+    position: relative;
+    top: 44px;
+    
     
 }
 .video_wrapper iframe {
-    width: 970px;
+    /* width: 970px; */
+    width: 100%;
     height: 430px;
     margin: 0 auto 85px auto;
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
@@ -511,7 +513,7 @@ header {
 
 }
 .distribution {
-    margin: 250px auto 0 auto;
+    margin: 0 auto;
 }
 
 .distribution h3 {
@@ -829,8 +831,8 @@ footer {
     }
     .video_wrapper {
         width: 80%;
-        top: 269px;
-        left: 110px;
+        top: 44px;
+
     }
     .video_wrapper iframe {
         width: 80%;
@@ -1005,8 +1007,22 @@ footer {
     }
 
 
-
-
+    .contact_information_first
+    {
+        padding-bottom: 70px;
+    }
+    .footer_container {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    .contact_information_first h3 
+    {
+        text-align: left;
+    }
+    .standard h3, p {
+        text-align: left;
+    }
 
 }
 
