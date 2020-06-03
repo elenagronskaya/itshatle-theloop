@@ -623,7 +623,7 @@ footer {
     margin: 70px 0 0 0;
 }
 .contact_information p {
-    width: 225px;
+    width: 231px;
     height: 14px;
     font-weight: normal;
     font-size: 14px;
@@ -1016,8 +1016,7 @@ footer {
     }
 
     .standard h3, p {
-        text-align: left;
-        padding-left: 35px;
+        text-align: center;
     }
 
     .distribution h3 {
