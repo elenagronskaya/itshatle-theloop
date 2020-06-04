@@ -456,13 +456,28 @@ header {
 
 
 }
-
-.about_work {
-    
-    max-width: 100%;
-    min-height: 570px;
-    background: #fff url('./images/rectangle5.jpg');
+/* Videoplayer PC */
+.video_section{
+    position: relative;
 }
+.video_background {
+    background: #fff url('./images/rectangle5.jpg');
+    width: 100%;
+    height: 570px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.video_container {
+    position: relative;
+}
+/* .about_work {
+    max-width: 1920px;
+    min-height: 570px;
+} */
+    
+
 .about_work h2 {
     width: 444px;
     height: 35px;
@@ -472,7 +487,7 @@ header {
     text-align: center;
     color: #FFFFFF;
     margin: 70px auto 0 auto;
-    padding-top: 70px;
+   
 
 }
 .about_work p {
@@ -482,22 +497,20 @@ header {
     line-height: 25px;
     text-align: center;
     color: #FFFFFF;
-    margin: 30px auto 0 auto;
+    margin: 30px auto 70px auto;
     
 
 }
 .video_wrapper {
     margin: 0 auto;
     border-bottom: 1px solid #E0E0E0;
-    width: 80%;
-    position: relative;
-    top: 44px;
-    
+    width: 1110px;
+     top: 220px;
+    left: 445px;
     
 }
 .video_wrapper iframe {
-    
-    width: 100%;
+    width: 970px;
     height: 430px;
     margin: 0 auto 85px auto;
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
@@ -508,7 +521,7 @@ header {
 
 }
 .distribution {
-    margin: 0 auto;
+    margin: 50px auto 0 auto;
 }
 
 .distribution h3 {
@@ -569,7 +582,7 @@ header {
     
     
 }
-    
+   
 
 .distribution pre {
     width: 386px;
@@ -582,6 +595,9 @@ header {
     margin: 35px auto 0 auto;
 
 }
+
+
+/* video player PC end */
 footer {
     max-width: 1920px;
     height: 413px;
@@ -666,7 +682,7 @@ footer {
 .container {
     max-width: 1110px;
     margin: 0 auto;
-    overflow: hidden;
+    
    
 } 
 
@@ -704,6 +720,14 @@ footer {
         width: 190px;
         margin: 10px 10px 0 10px;
     }
+    .create_sites h3 {
+        margin: 0 auto;
+    }
+    .create_sites p {
+        display: flex;
+        text-align: center;
+    }
+    
     .all_services {
         margin: 55px auto 30px auto;
     }
@@ -719,11 +743,17 @@ footer {
         padding: 0 10px;
         margin: 32px 0 0 0;
     }
-    .standard h3, p {
+    .standard h3 {
         width: unset;
         height: unset;
-        text-align: left;
-        padding-left: 35px;
+        text-align: center;
+        
+    }
+    .standard  p {
+        width: unset;
+        height: unset;
+        text-align: center;
+        
     }
     .about_company {
         margin: 30px auto 20px auto;
@@ -746,6 +776,9 @@ footer {
     }
     .all_projects {
         margin: 100px auto;
+    }
+    .all_projects button {
+        margin: 30px auto 30px auto;
     }
     .section_title p {
         width: unset;
@@ -804,7 +837,8 @@ footer {
     .specialisation_study h3 {
         width: unset;
         font-size: 16px;
-        margin: 20px 0 0 0;
+        margin: 20px auto 0 auto;
+        text-align: center;
     }
     .specialisation_study h3 span {
         font-size: 16px;
@@ -812,6 +846,7 @@ footer {
     .specialisation_study p {
         width: unset;
         height: unset;
+        text-align: center;
 
     }
     .specialisation_study a {
@@ -819,14 +854,27 @@ footer {
         height: unset;
         margin: 30px auto 50px auto;
     }
+   
     .distribution p {
         width: unset;
     }
+    .distribution h3 {
+        margin: 40px auto 0 auto;
+    }
+    .video_background {
+        height: 320px;
+    }
     .about_work {
-        min-height: 370px;
+        min-height: unset;
+        padding-top: 20px;
+    }
+    .about_work h2 {
+        margin: 0 auto;
     }
     .about_work p {
         width: unset;
+        margin: 30px auto 35px auto;
+
     }
     .video_wrapper {
         width: 80%;
@@ -836,8 +884,11 @@ footer {
     .video_wrapper iframe {
         width: 80%;
         height: 230px;
+        margin: 0 auto 40px auto;
 
     }
+
+    /* END Videoplayer */
     .footer_container {
         flex-wrap: wrap;
         justify-content: center;
@@ -847,8 +898,9 @@ footer {
         margin: 30px 0 0 0;
 
     }
-    .contact_information_first h3 {
-        margin: 30px 0 0 0;
+    .contact_information p {
+        margin: 30px auto 0 auto;
+        text-align: center;
     }
     
 }
@@ -856,7 +908,7 @@ footer {
 /* ======================= ДЛЯ МОБИЛЫ ========================================= */
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .container {
         box-sizing: border-box;
         width: 100%;
@@ -879,7 +931,7 @@ footer {
         
     }
     .header-wrapper {
-        min-height: 560px;
+        min-height: 500px;
     }
     .about {
         margin-top: 40px;
@@ -896,6 +948,9 @@ footer {
         width: 100%;
         padding: 0 10px;
         box-sizing: border-box;
+    }
+    .projects {
+        margin: 30px auto 20px auto;
     }
     .all_services {
         margin: 25px auto;
@@ -927,7 +982,7 @@ footer {
     }
 
     .work {
-        width: 100%;
+        width: 80%;
         height: unset;
     }
     .development_standard {
@@ -992,36 +1047,27 @@ footer {
     .all_projects {
         margin: 50px auto;
     }
+  
+    
+ /* video player 
+    MOBILE
+    */
     .about_work h2 {
         font-size: 25px;
         margin: 0 auto;
-        padding-top: 35px;
+        padding-top: 15px;
         width: unset;
         height: unset;
     }
     .about_work p {
         font-size: 10px;
-        margin: 0 auto;
+        margin: 0 auto 20px auto;
     }
-
-
-    .contact_information_first {
-        padding-bottom: 70px;
-    }
-
-    .footer_container {
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: center;
-    }
-
-    .standard h3, p {
-        text-align: center;
-    }
-
     .distribution h3 {
         height: unset;
         width: unset;
+        margin: 20px auto 0 auto;
+
     }
     .distribution p {
         height: unset;
@@ -1036,7 +1082,23 @@ footer {
     }
     .distribution pre {
         font-size: 10px;
+        margin: 20px auto 0 auto;
     }
+
+    .contact_information_first {
+        padding-bottom: 70px;
+    }
+
+    .footer_container {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+
+    .standard h3, p {
+        text-align: center;
+    }
+  
     .footer_container {
         margin: 35px auto 0 auto;
     }
@@ -1053,7 +1115,7 @@ footer {
         margin: 30px 0 0 0;
     }
     .contact_information p {
-        text-align: left;
+        text-align: center;
     }
     .contact_information {
         padding-bottom: 20px;
