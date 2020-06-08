@@ -1,0 +1,13 @@
+$color : greeen;
+body 
+{
+    .square 
+    {
+      background-color: $color;
+      color: red;
+    }
+    a{
+      columns: $color;
+    }
+      
+}
