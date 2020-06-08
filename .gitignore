@@ -111,13 +111,13 @@ $RECYCLE.BIN/
 .dropbox.cache
 
 
-### Sass ###
-.sass-cache/
-*.css.map
+# ### Sass ###
+# .sass-cache/
+# *.css.map
 
 
-### Less ###
-*.css
+# ### Less ###
+# *.css
 
 
 ### grunt ###
