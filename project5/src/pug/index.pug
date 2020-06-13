@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    link(rel="stylesheet", href="css/styles.css")
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Мой третий проект</title>
+  </head>
+  <body>
+    .container
+      nav.navbar.navbar-expand-lg.navbar-expand-md.navbar-light.bg-light
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarNavDropdown.collapse.navbar-collapse
+          ul.navbar-nav
+            li.nav-item.dropdown
+              a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                | Для мужчин
+              .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+                a.dropdown-item(href='#') Одежда
+                a.dropdown-item(href='#') Обувь
+                a.dropdown-item(href='#') Аксессуары
+            li.nav-item.dropdown
+              a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                | Для женщин
+              .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+                a.dropdown-item(href='#') Одежда
+                a.dropdown-item(href='#') Обувь 
+                a.dropdown-item(href='#') Аксессуары
+            li.nav-item.dropdown
+              a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                | Для детей
+              .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+                a.dropdown-item(href='#') Одежда
+                a.dropdown-item(href='#') Обувь
+                a.dropdown-item(href='#') Аксессуары
+            .navigation-logo
+              img(src="image/logo.svg", alt="logo")
+            li.nav-item.active
+              a.nav-link(href='#')
+                | Оплата
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='#') Доставка
+            li.nav-item.nav-item-basket
+              a.nav-link(href='#' data-toggle='modal' data-target='#exampleModal') 
+                img(src="image/first-screen__basket.svg", alt="first-screen__basket")
+                #exampleModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+                  .modal-dialog
+                    .modal-content
+                      .modal-header
+                        h5#exampleModalLabel.modal-title Basket
+                        button.close(type='button' data-dismiss='modal' aria-label='Close')
+                          span(aria-hidden='true') &times;
+                      .modal-body
+                        |Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nisi necessitatibus ullam maxime earum tempore amet nam, deserunt ratione autem et neque vel? Commodi odit iusto cumque eligendi nam laudantium. ...
+                      .modal-footer
+                        button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+                        button.btn.btn-primary(type='button') Save changes
+      #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+        ol.carousel-indicators
+          li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+          li(data-target='#carouselExampleIndicators' data-slide-to='1')
+          li(data-target='#carouselExampleIndicators' data-slide-to='2')
+        .carousel-inner
+          .carousel-item.active
+            .row
+              .column.col-lg-6.col-md-12.col-sm-12.col-xs-12
+                p.carousel Зимняя распродажа
+                h1.carousel скидки до 90%
+                button.carousel смотреть модели
+              .column.col-lg-6.col-md-12.col-sm-12.col-xs-12
+                p.last 9 900 ₽
+                p.new 1 900 ₽
+                img.d-block.w-100(src='image/running_shoes.png' alt='running_shoes')
+          .carousel-item
+            .row
+              .column.col-lg-6.col-md-12.col-sm-12.col-xs-12
+                p.carousel Выгодные предложения
+                h1.carousel скидки до 50%
+                button.carousel смотреть модели
+              .column.col-lg-6.col-md-12.col-sm-12.col-xs-12 
+                p.last 9 900 ₽
+                p.new 4 900 ₽
+                img.d-block.w-100(src='image/running_shoes.png' alt='running_shoes')
+          .carousel-item
+            .row
+              .column.col-lg-6.col-md-12.col-sm-12.col-xs-12
+                p.carousel Модные аксессуары
+                h1.carousel 2 по цене 1
+                button.carousel смотреть модели
+              .column.col-lg-6.col-md-12.col-sm-12.col-xs-12
+                p.last 9 900 ₽
+                p.new 5000 ₽
+                img.d-block.w-100(src='image/running_shoes.png' alt='running_shoes')
+            
+        a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.sr-only Previous
+        a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.sr-only Next
+    section.section-black
+      h2.shipping БЕСПЛАТНАЯ ДОСТАВКА ОТ 3000₽
+      p.present Сделайте заказ и получите подарок!
+    .container
+      .row
+        .column.col-lg-6.col-md-6.col-sm-12.col-xs-12
+          .row.dress-style
+            .column.col-lg-8.col-md-8.col-sm-12.col-xs-12.add-background-left
+              h3.dress МУЖСКАЯ КОЛЛЕКЦИЯ
+              p.kind-dress Обувь, полуверы, костюмы
+              button.arrow
+            .column.col-lg-4.col-md-4.col-sm-12.col-xs-12
+              img.man(src="image/man.png", alt="man")
+          .row
+            .column.col-lg-6.col-md-6.col-sm-6.description
+              p.wear ПЛАТЬЯ
+              img(src="image/mayka.png", alt="mayka")
+            .column.col-lg-6.col-md-6.col-sm-6.description
+              p.wear ПЛАТЬЯ
+              img(src="image/mayka.png", alt="mayka")
+            .column.col-lg-6.descriptions
+              p.wear ПЛАТЬЯ
+              img.maika(src="image/mayka.png", alt="mayka")
+            .column.col-lg-6.descriptions
+              p.wear ПЛАТЬЯ
+              img.maika(src="image/mayka.png", alt="mayka")
+
+        .column.col-lg-6.col-md-6.col-sm-12.col-xs-12
+          .row.dress-style
+            .column.col-lg-8.col-md-8.col-sm-12.col-xs-12.add-background-right
+              h3.dress ЖЕНСКАЯ КОЛЛЕКЦИЯ 
+              p.kind-dress Обувь, полуверы, костюмы
+              button.arrow 
+            .column.col-lg-4.col-md-4.col-sm-12.col-xs-12
+              img.woman(src="image/woman.png", alt="woman")
+          .row
+            .column.col-lg-6.col-md-6.col-sm-6.description
+              p.wear ПЛАТЬЯ
+              img(src="image/mayka.png", alt="mayka")
+            .column.col-lg-6.col-md-6.col-sm-6.description
+              p.wear ПЛАТЬЯ
+              img(src="image/mayka.png", alt="mayka")
+            .column.col-lg-6.descriptions
+              p.wear ПЛАТЬЯ
+              img.maika(src="image/mayka.png", alt="mayka")
+            .column.col-lg-6.descriptions
+              p.wear ПЛАТЬЯ
+              img.maika(src="image/mayka.png", alt="mayka")
+    .container
+      h2.new-model Новые модели 
+      .new-dress
+        .dresses
+          img(src="image/new-dress.png", alt="new-dress")
+          p Коктейльное платье
+          h3 ₽ 40 000
+        .dresses
+          //- .column.col-lg-3.col-md-6.col-sm-12
+          img(src="image/new-dress.png", alt="new-dress")
+          p Коктейльное платье
+          h3 ₽ 40 000
+        .dresses
+          //- .column.col-lg-3.col-md-6.col-sm-12
+          img(src="image/new-dress.png", alt="new-dress")
+          p Коктейльное платье
+          h3 ₽ 40 000
+            
+        .dress
+          img(src="image/new-dress.png", alt="new-dress")
+          p Коктейльное платье
+          h3 ₽ 40 000
+
+      button ВСЕ МОДЕЛИ
+      
+
+
+
+
+              
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

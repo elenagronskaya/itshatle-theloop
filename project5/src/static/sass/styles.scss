@@ -1,0 +1,436 @@
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+.container {
+   background: #F9F6F1;
+   min-height: 100px !important;
+   display: flex;
+   flex-direction: column;
+   padding: 0;
+
+
+   .navbar{
+       padding: 0;
+       width: 100%;
+
+        .navbar-nav {
+            margin-top: 61px ;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .nav-item.dropdown {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 0.03em;
+                color: #212121;
+                margin: 12px 45px 160px 0;
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: 20px;
+                }
+
+                    .nav-link {
+                        padding: 0;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 17px;
+                        letter-spacing: 0.03em;
+                        color: #212121;
+                        max-width: 95px;
+                        
+                        }
+            }
+
+            .navigation-logo {
+                margin: 0 56px 90px 0;
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
+
+            }
+
+            .nav-item-basket {
+                margin-left: 66px;
+                @include media-breakpoint-down(sm) {
+                    margin-left: 0;
+                }
+                .nav-link {
+                    padding: 0;
+                }
+            }
+
+    
+        }
+   
+  }
+
+    .column {
+        @include media-breakpoint-down(md) { 
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+         }    
+        p.carousel {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 37px;
+            letter-spacing: 0.02em;
+            color: #000000;
+            margin-top: 40px;
+        }
+       
+        h1.carousel {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 55px;
+            line-height: 67px;
+            letter-spacing: 0.04em;
+            color: #000000;
+            margin-top: 35px;
+        }
+
+        button.carousel {
+            width: 240px;
+            height: 55px;
+            background: #D7B399;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.03em;
+            color: #FFFFFF;
+            border: 0;
+            margin-top: 55px;
+            text-align: center;
+            display: block;
+
+            @include media-breakpoint-down(md) { 
+                margin: 55px auto;
+             }    
+        }
+        p.last {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: right;
+            letter-spacing: 0.05em;
+            text-decoration-line: line-through;
+            text-transform: uppercase;
+            color: #000000;
+            margin-top: 40px;
+
+            @include media-breakpoint-down(md) { 
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+              }    
+            
+        }
+
+        p.new {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 51px;
+            text-align: right;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: #D84033;
+            margin-top: 14px;
+
+            @include media-breakpoint-down(md) { 
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+            }    
+        }
+        img.d-block {
+            margin-bottom: 150px;
+            
+        }
+
+        
+  }  
+
+}
+.section-black{
+    background: #212121;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+
+    .shipping{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF; 
+        margin: 80px auto 0 auto;
+    }
+
+    .present{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 26px;
+        text-align: center;
+        color: #FFFFFF; 
+        margin: 25px auto 0 auto;
+
+    }
+}
+
+.add-background-left:before {
+    left: -999em;
+    background: #F4F4F4;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 999em;
+    top: 0;
+    bottom: 0;
+}
+
+.add-background-right:before {
+   z-index:-10;
+   background: #F4F4F4;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 999em;
+    top: 0;
+    bottom: 0;
+    left:0;
+}
+    .dress-style {
+        max-width: 545px;
+        display: flex;
+       
+
+        .dress {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            letter-spacing: 0.03em;
+            color: #000000;
+            margin: 60px 0 0 10px;
+
+            @include media-breakpoint-down(md) {
+                text-align: center;
+                flex-direction: column;
+                }
+            }
+        .kind-dress {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000;
+            margin: 25px 0 0 10px;
+
+            @include media-breakpoint-down(md) {
+                text-align: center;
+                flex-direction: column;
+                }
+            }
+        .arrow {
+            width: 80px;
+            height: 30px;
+            background: #D7B399;
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            margin: 40px 0 0 10px;
+            display: block;
+            @include media-breakpoint-down(md) {
+                text-align: center;
+                flex-direction: column;
+                margin: 40px auto;
+                }
+
+            }
+        .man {
+            width: 100%;
+            // width: 190px;
+            // height: 171px;
+            margin: 79px 15px 0 0;
+            @include media-breakpoint-down(md) {
+                justify-content: center;
+                flex-direction: column;
+                margin: 20px auto;
+                }
+        }
+    
+        .woman {
+            // width: 190px;
+            // height: 171px;
+            margin: 79px 0 0 0;
+            width: 100%;
+            @include media-breakpoint-down(md) {
+                justify-content: center;
+                flex-direction: column;
+                margin: 20px auto;
+                }
+
+        }
+
+    }
+        .description {
+            padding: 0;
+            @include media-breakpoint-down(md) {
+                display: flex;
+               
+               
+                }
+            
+            .wear {
+                width: 93px;
+                height: 26px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 21px;
+                line-height: 26px;
+                letter-spacing: 0.03em;
+                color: #000000;
+                position: relative;
+                top: 210px;
+                left: 30px;
+                margin: 0;
+                @include media-breakpoint-down(md) {
+                    text-align: left;
+                    flex-direction: column;
+                    width: 65%;
+                    margin: 0 auto;
+                    position: relative;
+                    left: 0;
+                    }
+                
+            }
+            .maika {
+                width: 278px;
+                height: 236px;
+                @include media-breakpoint-down(md) {
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 65%;
+                    margin: 0 auto;
+                    }
+                @include media-breakpoint-down(sm) {
+                    width: 50%;
+                }
+            
+            }
+            
+
+        }
+        .descriptions {
+            padding: 0;
+            
+            .wear {
+                width: 93px;
+                height: 26px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 21px;
+                line-height: 26px;
+                letter-spacing: 0.03em;
+                color: #000000;
+                position: relative;
+                top: 210px;
+                left: 30px;
+                margin: 0;
+                @include media-breakpoint-down(md) {
+                    display: none;
+                    }
+            
+            }
+            .maika {
+                width: 278px;
+                height: 236px;
+                @include media-breakpoint-down(md) {
+                    display: none;
+                    }   
+            
+            }
+        }    
+        
+    .new-model {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin: 150px auto 0 auto;
+        color: #212121;
+    } 
+    .new-dress {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .dresses {
+            margin-top: 103px;
+            display: flex;
+            flex-direction: column;
+            
+            img {
+                width: 205px;
+                height: 211px;
+            }
+            p {
+
+            }
+        }    
+    }   
+
+
+
+
+
+
+@include media-breakpoint-only(xs) {  }
+@include media-breakpoint-only(sm) {  }
+@include media-breakpoint-only(md) {  }
+@include media-breakpoint-only(lg) {  }
+@include media-breakpoint-only(xl) {  }
+
+
+
+
+@include media-breakpoint-up(xs) {  }
+@include media-breakpoint-up(sm) {  }
+@include media-breakpoint-up(md) {  }
+@include media-breakpoint-up(lg) {  }
+@include media-breakpoint-up(xl) {  }
+
+
+@include media-breakpoint-down(xs) {  }
+@include media-breakpoint-down(sm) {  }
+@include media-breakpoint-down(md) {  }
+@include media-breakpoint-down(lg) {  }
+   
+

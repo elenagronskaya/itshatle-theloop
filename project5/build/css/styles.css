@@ -1,0 +1,317 @@
+.container {
+  background: #F9F6F1;
+  min-height: 100px !important;
+  display: flex;
+  flex-direction: column;
+  padding: 0; }
+  .container .navbar {
+    padding: 0;
+    width: 100%; }
+    .container .navbar .navbar-nav {
+      margin-top: 61px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+      .container .navbar .navbar-nav .nav-item.dropdown {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.03em;
+        color: #212121;
+        margin: 12px 45px 160px 0; }
+        @media (max-width: 767.98px) {
+          .container .navbar .navbar-nav .nav-item.dropdown {
+            margin-bottom: 20px; } }
+        .container .navbar .navbar-nav .nav-item.dropdown .nav-link {
+          padding: 0;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.03em;
+          color: #212121;
+          max-width: 95px; }
+      .container .navbar .navbar-nav .navigation-logo {
+        margin: 0 56px 90px 0; }
+        @media (max-width: 991.98px) {
+          .container .navbar .navbar-nav .navigation-logo {
+            display: none; } }
+      .container .navbar .navbar-nav .nav-item-basket {
+        margin-left: 66px; }
+        @media (max-width: 767.98px) {
+          .container .navbar .navbar-nav .nav-item-basket {
+            margin-left: 0; } }
+        .container .navbar .navbar-nav .nav-item-basket .nav-link {
+          padding: 0; }
+  @media (max-width: 991.98px) {
+    .container .column {
+      display: flex;
+      text-align: center;
+      flex-direction: column; } }
+  .container .column p.carousel {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-top: 40px; }
+  .container .column h1.carousel {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 67px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-top: 35px; }
+  .container .column button.carousel {
+    width: 240px;
+    height: 55px;
+    background: #D7B399;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    border: 0;
+    margin-top: 55px;
+    text-align: center;
+    display: block; }
+    @media (max-width: 991.98px) {
+      .container .column button.carousel {
+        margin: 55px auto; } }
+  .container .column p.last {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 40px; }
+    @media (max-width: 991.98px) {
+      .container .column p.last {
+        display: flex;
+        text-align: center;
+        flex-direction: column; } }
+  .container .column p.new {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 51px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #D84033;
+    margin-top: 14px; }
+    @media (max-width: 991.98px) {
+      .container .column p.new {
+        display: flex;
+        text-align: center;
+        flex-direction: column; } }
+  .container .column img.d-block {
+    margin-bottom: 150px; }
+
+.section-black {
+  background: #212121;
+  height: 235px;
+  display: flex;
+  flex-direction: column; }
+  .section-black .shipping {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin: 80px auto 0 auto; }
+  .section-black .present {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 25px auto 0 auto; }
+
+.add-background-left:before {
+  left: -999em;
+  background: #F4F4F4;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 999em;
+  top: 0;
+  bottom: 0; }
+
+.add-background-right:before {
+  z-index: -10;
+  background: #F4F4F4;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 999em;
+  top: 0;
+  bottom: 0;
+  left: 0; }
+
+.dress-style {
+  max-width: 545px;
+  display: flex; }
+  .dress-style .dress {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin: 60px 0 0 10px; }
+    @media (max-width: 991.98px) {
+      .dress-style .dress {
+        text-align: center;
+        flex-direction: column; } }
+  .dress-style .kind-dress {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin: 25px 0 0 10px; }
+    @media (max-width: 991.98px) {
+      .dress-style .kind-dress {
+        text-align: center;
+        flex-direction: column; } }
+  .dress-style .arrow {
+    width: 80px;
+    height: 30px;
+    background: #D7B399;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    margin: 40px 0 0 10px;
+    display: block; }
+    @media (max-width: 991.98px) {
+      .dress-style .arrow {
+        text-align: center;
+        flex-direction: column;
+        margin: 40px auto; } }
+  .dress-style .man {
+    width: 100%;
+    margin: 79px 15px 0 0; }
+    @media (max-width: 991.98px) {
+      .dress-style .man {
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px auto; } }
+  .dress-style .woman {
+    margin: 79px 0 0 0;
+    width: 100%; }
+    @media (max-width: 991.98px) {
+      .dress-style .woman {
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px auto; } }
+
+.description {
+  padding: 0; }
+  @media (max-width: 991.98px) {
+    .description {
+      display: flex; } }
+  .description .wear {
+    width: 93px;
+    height: 26px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    position: relative;
+    top: 210px;
+    left: 30px;
+    margin: 0; }
+    @media (max-width: 991.98px) {
+      .description .wear {
+        text-align: left;
+        flex-direction: column;
+        width: 65%;
+        margin: 0 auto;
+        position: relative;
+        left: 0; } }
+  .description .maika {
+    width: 278px;
+    height: 236px; }
+    @media (max-width: 991.98px) {
+      .description .maika {
+        justify-content: center;
+        flex-direction: column;
+        width: 65%;
+        margin: 0 auto; } }
+    @media (max-width: 767.98px) {
+      .description .maika {
+        width: 50%; } }
+
+.descriptions {
+  padding: 0; }
+  .descriptions .wear {
+    width: 93px;
+    height: 26px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    position: relative;
+    top: 210px;
+    left: 30px;
+    margin: 0; }
+    @media (max-width: 991.98px) {
+      .descriptions .wear {
+        display: none; } }
+  .descriptions .maika {
+    width: 278px;
+    height: 236px; }
+    @media (max-width: 991.98px) {
+      .descriptions .maika {
+        display: none; } }
+
+.new-model {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 150px auto 0 auto;
+  color: #212121; }
+
+.new-dress {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .new-dress .dresses {
+    margin-top: 103px;
+    display: flex;
+    flex-direction: column; }
+    .new-dress .dresses img {
+      width: 205px;
+      height: 211px; }

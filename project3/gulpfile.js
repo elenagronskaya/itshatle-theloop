@@ -7,10 +7,6 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('app/dist/css'))
 });
 
-gulp.task('hello', function(){
-    console.log('Hello world!!');
-});
-
 
 gulp.task('sass:watch', function(){
     gulp.watch(['app/sass/*.scss', 'app/sass/*.sass'],  gulp.parallel('sass'))
