@@ -2,9 +2,15 @@
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
-
+.column {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
 .container {
-   background: #F9F6F1;
    min-height: 100px !important;
    display: flex;
    flex-direction: column;
@@ -198,33 +204,38 @@
     }
 }
 
-.add-background-left:before {
-    left: -999em;
-    background: #F4F4F4;
-    content: '';
-    display: block;
-    position: absolute;
-    width: 999em;
-    top: 0;
-    bottom: 0;
-}
+// .add-background-left:before {
+//     left: -999em;
+//     background: #F9F6F1;
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     width: 999em;
+//     top: 0;
+//     bottom: 0;
+//     @include media-breakpoint-down(sm) {
+//         display: none;
+//     }
+// }
 
-.add-background-right:before {
-   z-index:-10;
-   background: #F4F4F4;
-    content: '';
-    display: block;
-    position: absolute;
-    width: 999em;
-    top: 0;
-    bottom: 0;
-    left:0;
-}
-    .dress-style {
-        max-width: 545px;
+// .add-background-right:before {
+//     z-index:-10;
+//     background: #F4F4F4;
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     width: 999em;
+//     top: 0;
+//     bottom: 0;
+//     left:0;
+//     @include media-breakpoint-down(sm) {
+//         display: none;
+//     }
+// }
+    .dress-style-m {
         display: flex;
+        background: #F9F6F1;
        
-
         .dress {
             font-family: Montserrat;
             font-style: normal;
@@ -233,8 +244,96 @@
             line-height: 29px;
             letter-spacing: 0.03em;
             color: #000000;
-            margin: 60px 0 0 10px;
+            margin: 60px 0 0 8px;
 
+            @include media-breakpoint-down(md) {
+                text-align: center;
+                flex-direction: column;
+                }
+            }
+
+        .kind-dress {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000;
+            margin: 25px 0 0 10px;
+
+            @include media-breakpoint-down(md) {
+                text-align: center;
+                flex-direction: column;
+                }
+            }
+
+        .arrow {
+            width: 80px;
+            height: 30px;
+            background: #D7B399;
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            margin: 40px 0 0 10px;
+            display: block;
+            @include media-breakpoint-down(md) {
+                text-align: center;
+                flex-direction: column;
+                margin: 40px auto;
+                }
+            }
+
+        .man {
+            width: 100%;
+            margin: 79px 15px 0 0;
+            @include media-breakpoint-down(md) {
+                justify-content: center;
+                flex-direction: column;
+                margin: 20px auto;
+                }
+            }
+
+    }
+        .description {
+            height: 236px;
+            background: url(../image/mayka.png) no-repeat right, #F4F4F4;
+            @include media-breakpoint-down(sm) {
+               background-position: center;
+                }
+            
+            .wear {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 21px;
+                line-height: 26px;
+                letter-spacing: 0.03em;
+                color: #000000;
+                margin: 186px 0 24px 30px;
+                max-width: 1px;
+
+            }
+            
+        }
+
+    
+            
+    
+    .dress-style-w {
+        max-width: 545px;
+        display: flex;
+        background: #F4F4F4;
+           
+    
+        .dress {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            letter-spacing: 0.03em;
+            color: #000000;
+            margin: 60px 0 0 8px;
+    
             @include media-breakpoint-down(md) {
                 text-align: center;
                 flex-direction: column;
@@ -248,7 +347,7 @@
             line-height: 20px;
             color: #000000;
             margin: 25px 0 0 10px;
-
+    
             @include media-breakpoint-down(md) {
                 text-align: center;
                 flex-direction: column;
@@ -267,23 +366,10 @@
                 flex-direction: column;
                 margin: 40px auto;
                 }
-
-            }
-        .man {
-            width: 100%;
-            // width: 190px;
-            // height: 171px;
-            margin: 79px 15px 0 0;
-            @include media-breakpoint-down(md) {
-                justify-content: center;
-                flex-direction: column;
-                margin: 20px auto;
-                }
-        }
     
+            }
+        
         .woman {
-            // width: 190px;
-            // height: 171px;
             margin: 79px 0 0 0;
             width: 100%;
             @include media-breakpoint-down(md) {
@@ -291,90 +377,10 @@
                 flex-direction: column;
                 margin: 20px auto;
                 }
-
+    
+            }
+    
         }
-
-    }
-        .description {
-            padding: 0;
-            @include media-breakpoint-down(md) {
-                display: flex;
-               
-               
-                }
-            
-            .wear {
-                width: 93px;
-                height: 26px;
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 300;
-                font-size: 21px;
-                line-height: 26px;
-                letter-spacing: 0.03em;
-                color: #000000;
-                position: relative;
-                top: 210px;
-                left: 30px;
-                margin: 0;
-                @include media-breakpoint-down(md) {
-                    text-align: left;
-                    flex-direction: column;
-                    width: 65%;
-                    margin: 0 auto;
-                    position: relative;
-                    left: 0;
-                    }
-                
-            }
-            .maika {
-                width: 278px;
-                height: 236px;
-                @include media-breakpoint-down(md) {
-                    justify-content: center;
-                    flex-direction: column;
-                    width: 65%;
-                    margin: 0 auto;
-                    }
-                @include media-breakpoint-down(sm) {
-                    width: 50%;
-                }
-            
-            }
-            
-
-        }
-        .descriptions {
-            padding: 0;
-            
-            .wear {
-                width: 93px;
-                height: 26px;
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 300;
-                font-size: 21px;
-                line-height: 26px;
-                letter-spacing: 0.03em;
-                color: #000000;
-                position: relative;
-                top: 210px;
-                left: 30px;
-                margin: 0;
-                @include media-breakpoint-down(md) {
-                    display: none;
-                    }
-            
-            }
-            .maika {
-                width: 278px;
-                height: 236px;
-                @include media-breakpoint-down(md) {
-                    display: none;
-                    }   
-            
-            }
-        }    
         
     .new-model {
         font-family: Montserrat;
