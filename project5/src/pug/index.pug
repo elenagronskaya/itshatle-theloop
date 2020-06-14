@@ -1,13 +1,21 @@
 <!doctype html>
+
+
+- var datetimeversion = new Date().toISOString()
+
 <html lang="ru">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    link(rel="stylesheet", href="css/styles.css")
+    link(rel="stylesheet", href="css/styles.css?ver=${datetimeversion}")
+    link(rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous")
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Мой третий проект</title>
   </head>
@@ -116,6 +124,7 @@
               h3.dress МУЖСКАЯ КОЛЛЕКЦИЯ
               p.kind-dress Обувь, полуверы, костюмы
               button.arrow
+                i.fal.fa-long-arrow-right
             .column.col-lg-4.col-md-4.col-sm-12.col-xs-12
               img.man(src="image/man.png", alt="man")
           .row
@@ -137,7 +146,8 @@
             .column.col-lg-8.col-md-8.col-sm-12.col-xs-12.add-background-right
               h3.dress ЖЕНСКАЯ КОЛЛЕКЦИЯ 
               p.kind-dress Обувь, полуверы, костюмы
-              button.arrow 
+              button.arrow
+                 i.fal.fa-long-arrow-right
             .column.col-lg-4.col-md-4.col-sm-12.col-xs-12
               img.woman(src="image/woman.png", alt="woman")
           .row
@@ -153,30 +163,145 @@
             .column.col-lg-6.col-md-12.col-sm-12.description
               p.wear ПЛАТЬЯ
               
-    //- .container
-    //-   h2.new-model Новые модели 
-    //-   .new-dress
-    //-     .dresses
-    //-       img(src="image/new-dress.png", alt="new-dress")
-    //-       p Коктейльное платье
-    //-       h3 ₽ 40 000
-    //-     .dresses
-    //-       //- .column.col-lg-3.col-md-6.col-sm-12
-    //-       img(src="image/new-dress.png", alt="new-dress")
-    //-       p Коктейльное платье
-    //-       h3 ₽ 40 000
-    //-     .dresses
-    //-       //- .column.col-lg-3.col-md-6.col-sm-12
-    //-       img(src="image/new-dress.png", alt="new-dress")
-    //-       p Коктейльное платье
-    //-       h3 ₽ 40 000
-            
-    //-     .dress
-    //-       img(src="image/new-dress.png", alt="new-dress")
-    //-       p Коктейльное платье
-    //-       h3 ₽ 40 000
+    .container
+      h2.new-model.text-center Новые модели
+      .row
+        .column.col-lg-3.col-md-6.col-sm-12.text-center.new-dresses
+          .corner.left-top
+          .corner.right-top
+          .corner.left-bottom
+          .corner.right-bottom
+          img.model.img-fluid(src="image/new-dress.png", alt="new-dress")
+          p.name Коктейльное платье
+          h3.price ₽ 40 000
+        .column.col-lg-3.col-md-6.col-sm-12.text-center.new-dresses
+          .corner.left-top
+          .corner.right-top
+          .corner.left-bottom
+          .corner.right-bottom
+          img.model(src="image/new-dress.png", alt="new-dress")
+          .corner.left-top
+          .corner.right-top
+          .corner.left-bottom
+          .corner.right-bottom
+          p.name Коктейльное платье
+          h3.price ₽ 40 000
+        .column.col-lg-3.col-md-6.col-sm-12.text-center.new-dresses
+          .corner.left-top
+          .corner.right-top
+          .corner.left-bottom
+          .corner.right-bottom
+          img.model(src="image/new-dress.png", alt="new-dress")
+          p.name Коктейльное платье
+          h3.price ₽ 40 000
+        .column.col-lg-3.col-md-6.col-sm-12.text-center.new-dresses
+          .corner.left-top
+          .corner.right-top
+          .corner.left-bottom
+          .corner.right-bottom
+          img.model(src="image/new-dress.png", alt="new-dress")
+          p.name Коктейльное платье
+          h3.price ₽ 40 000
+      button.all-models ВСЕ МОДЕЛИ
+        i.fal.fa-long-arrow-right
+    section.section-gift
+      .container
+        form.discount
+          .form-group.row.discount
+            label.discount.col-lg-7.col-sm-12.col-form-label(for='inputdiscountemail') ПОЛУЧАЙТЕ СКИДКИ И ПОДАРКИ
+            .col-lg-3.col-sm-12
+              input#inputdiscountemail.form-control(type='email' placeholder='Ваш e-mail')
+            .col-lg-2.col-sm-12
+              button.discount.form-control(type='submit') ПОДПИСАТЬСЯ
+    .container
+      h2.new-model.text-center СКИДКИ ДО 90%
+      .row
+        .column.col-lg-3.col-md-6.col-sm-12.text-center.new-dresses
+          .corner.left-top
+          .corner.right-top
+          .corner.left-bottom
+          .corner.right-bottom
+          img.model.img-fluid(src="image/new-dress.png", alt="new-dress")
+          p.name Коктейльное платье
+          h3.price ₽ 40 000
+        .column.col-lg-3.col-md-6.col-sm-12.text-center.new-dresses
+          .corner.left-top
+          .corner.right-top
+          .corner.left-bottom
+          .corner.right-bottom
+          img.model(src="image/new-dress.png", alt="new-dress")
+          .corner.left-top
+          .corner.right-top
+          .corner.left-bottom
+          .corner.right-bottom
+          p.name Коктейльное платье
+          h3.price ₽ 40 000
+        .column.col-lg-3.col-md-6.col-sm-12.text-center.new-dresses
+          .corner.left-top
+          .corner.right-top
+          .corner.left-bottom
+          .corner.right-bottom
+          img.model(src="image/new-dress.png", alt="new-dress")
+          p.name Коктейльное платье
+          h3.price ₽ 40 000
+        .column.col-lg-3.col-md-6.col-sm-12.text-center.new-dresses
+          .corner.left-top
+          .corner.right-top
+          .corner.left-bottom
+          .corner.right-bottom
+          img.model(src="image/new-dress.png", alt="new-dress")
+          p.name Коктейльное платье
+          h3.price ₽ 40 000
+      button.all-models ВСЕ МОДЕЛИ
+        i.fal.fa-long-arrow-right
+    footer
+      .container
+        .row
+          .column.col-lg-4.col-md-6.col-sm-12
+            img.logo(src="image/logotype.svg", alt="logo")
+            p.logo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus egestas elit, at eleifend elit ornare ut.
+          .column.col-lg-8.col-md-6.col-sm-12
+            .row
+              .column.col-lg-3.col-md-6.col-sm-12.footer-items
+                h3 Основные ссылки
+                p О компании
+                p Каталог
+                p Доставка
+                p Оплата
+              .column.col-lg-3.col-md-6.col-sm-12.footer-items
+                h3 Категории
+                p Мужская одежда
+                p Женская одежда
+                p Детская одежда
+                p Для животных
+              .column.col-lg-3.col-md-6.col-sm-12.footer-items
+                h3 Полезные ссылки
+                p Таблица размеров
+                p Блог о моде
+                p Наша миссия
+              .column.col-lg-3.col-md-6.col-sm-12.footer-items
+                h3 Соц сети
+                .social-item
+                  i.fab.fa-vk 
+                  span VK.com  
+                .social-item
+                  i.fab.fa-facebook-square  
+                  span Facebook
+                .social-item
+                  i.fab.fa-instagram 
+                  span Instagram
+    .container
+      .row
+        .column.col-lg-6.col-md-6.col-sm-12.text-left
+          p.copyright Copyright © 2019. Все права защищены
+        .column.col-lg-6.col-md-6.col-sm-12.text-right
+          p.copyright Политика приватности
+                    
+                
 
-    //-   button ВСЕ МОДЕЛИ
+
+
+      
       
 
 
