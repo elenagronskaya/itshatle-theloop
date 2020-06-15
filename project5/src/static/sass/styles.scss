@@ -166,12 +166,11 @@
 
         img.d-block {
             margin-bottom: 150px; 
-        }
-
-        
+        }      
   }  
 
 }
+
 .section-black {
     background: #212121;
     height: 235px;
@@ -236,6 +235,7 @@
 //         display: none;
 //     }
 // }
+
     .dress-style-m {
         display: flex;
         background: #F9F6F1;
@@ -249,7 +249,6 @@
             letter-spacing: 0.03em;
             color: #000000;
             margin: 60px 0 0 8px;
-
             @include media-breakpoint-down(md) {
                 text-align: center;
                 flex-direction: column;
@@ -264,7 +263,6 @@
             line-height: 20px;
             color: #000000;
             margin: 25px 0 0 10px;
-
             @include media-breakpoint-down(md) {
                 text-align: center;
                 flex-direction: column;
@@ -318,10 +316,9 @@
                 color: #000000;
                 margin: 186px 0 24px 30px;
                 max-width: 1px;
-
-            }
-            
+            }    
         }
+
         .description-light {
             height: 236px;
             background: url(../image/mayka-light.png) no-repeat right, #F9F6F1;
@@ -339,19 +336,13 @@
                 color: #000000;
                 margin: 186px 0 24px 30px;
                 max-width: 1px;
-
-            }
-            
+            }   
         }
 
-    
-            
-    
     .dress-style-w {
         display: flex;
         background: #F4F4F4;
            
-    
         .dress {
             font-family: Montserrat;
             font-style: normal;
@@ -361,12 +352,12 @@
             letter-spacing: 0.03em;
             color: #000000;
             margin: 60px 0 0 8px;
-    
             @include media-breakpoint-down(md) {
                 text-align: center;
                 flex-direction: column;
                 }
             }
+
         .kind-dress {
             font-family: Montserrat;
             font-style: normal;
@@ -375,12 +366,12 @@
             line-height: 20px;
             color: #000000;
             margin: 25px 0 0 10px;
-    
             @include media-breakpoint-down(md) {
                 text-align: center;
                 flex-direction: column;
                 }
             }
+            
         .arrow {
             width: 80px;
             height: 30px;
@@ -398,7 +389,6 @@
                 flex-direction: column;
                 margin: 40px auto;
                 }
-    
             }
         
         .woman {
@@ -409,12 +399,9 @@
                 flex-direction: column;
                 margin: 20px auto;
                 }
-    
             }
-    
         }
 
-    
     .new-model {
         font-family: Montserrat;
         font-style: normal;
@@ -428,8 +415,8 @@
         @include media-breakpoint-down(md) {
             margin: 70px 0 50px 0;
         }
-
     }
+
     .new-dresses {
         position: relative;
         align-items: center;
@@ -446,6 +433,7 @@
             color: #000000;
             margin: 25px auto 0 auto ;
         }
+
         .price {
             width: 93px;
             height: 17px;
@@ -458,14 +446,15 @@
             color: #D7B399;
             margin: 15px auto 25px auto ;
         }
+
         .model {
             height: 211px;
             width: 205px;
             margin-top: 22px;
         }
+
         .corner {
             position: absolute;
-           
             width: 25px;
             height: 25px;
             border-top: 3px solid #D7B399;;
@@ -506,8 +495,8 @@
                 }
             }
         }   
-
     }
+
     .all-models {
         display: block;
         margin: 103px auto 150px auto;
@@ -528,9 +517,6 @@
         .fa-long-arrow-right {
             margin-left: 5px;
         }
-
-
-
     }
 
 .section-gift {
@@ -557,6 +543,7 @@
             margin-bottom: 20px;
         }
     }
+
     #inputdiscountemail {
         width: 255px;
         height: 40px;
@@ -567,6 +554,7 @@
             margin: 30px auto 20px auto;
         }
     }
+
     button.discount {
         width: 185px;
         height: 40px;
@@ -587,7 +575,6 @@
             margin: 0 auto 20px auto;
         }
     }
-
 } 
 
 footer {
@@ -604,6 +591,7 @@ footer {
         color: #FFFFFF;
         margin-top: 79px;
     }
+
     p.logo {
         width: 200px;
         height: 88px;
@@ -618,9 +606,11 @@ footer {
             margin: 39px auto 78px auto;
         }
     }
+
     .footer-items {
         padding-left: 20px;
     }
+
     .footer-items h3 {
         height: 13px;
         font-family: Montserrat;
@@ -637,6 +627,7 @@ footer {
             margin: 40px auto 10px auto;
         }
     }
+
     .footer-items p {
         font-family: Montserrat;
         font-style: normal;
@@ -646,6 +637,7 @@ footer {
         color: #CBCFD4;
         margin-top: 10px;
     }
+
     .social-item{
         margin-top: 15px;
         span {
@@ -667,9 +659,9 @@ footer {
         font-size: 16px;
         line-height: 16px;
         color: #D7B399; 
-    }
-    
+    }    
 }
+
 p.copyright {
     font-style: normal;
     font-weight: normal;
@@ -681,29 +673,7 @@ p.copyright {
         text-align: center;
         margin-top: 10px;
         margin-bottom: 0;
-    }
-    
+    }    
 }
 
-@include media-breakpoint-only(xs) {  }
-@include media-breakpoint-only(sm) {  }
-@include media-breakpoint-only(md) {  }
-@include media-breakpoint-only(lg) {  }
-@include media-breakpoint-only(xl) {  }
-
-
-
-
-@include media-breakpoint-up(xs) {  }
-@include media-breakpoint-up(sm) {  }
-@include media-breakpoint-up(md) {  }
-@include media-breakpoint-up(lg) {  }
-@include media-breakpoint-up(xl) {  }
-
-
-@include media-breakpoint-down(xs) {  }
-@include media-breakpoint-down(sm) {  }
-@include media-breakpoint-down(md) {  }
-@include media-breakpoint-down(lg) {  }
-   
 
