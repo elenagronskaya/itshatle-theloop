@@ -24,10 +24,13 @@
        }
 
         .navbar-nav {
-            margin-top: 61px ;
+            margin-top: 60px ;
             display: flex;
             justify-content: space-between;
             width: 100%;
+            @include media-breakpoint-down(sm) {
+                margin-top: 60px ;
+            }
 
             .nav-item.dropdown {
                 font-family: Montserrat;
@@ -301,6 +304,27 @@
         .description {
             height: 236px;
             background: url(../image/mayka.png) no-repeat right, #F4F4F4;
+            @include media-breakpoint-down(sm) {
+               background-position: center;
+                }
+            
+            .wear {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 21px;
+                line-height: 26px;
+                letter-spacing: 0.03em;
+                color: #000000;
+                margin: 186px 0 24px 30px;
+                max-width: 1px;
+
+            }
+            
+        }
+        .description-light {
+            height: 236px;
+            background: url(../image/mayka-light.png) no-repeat right, #F9F6F1;
             @include media-breakpoint-down(sm) {
                background-position: center;
                 }
